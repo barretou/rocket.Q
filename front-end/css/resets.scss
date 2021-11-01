@@ -1,0 +1,28 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    background-color: #E0ECFF !important;
+}
+
+p {
+    margin-bottom: 0;
+    word-break: break-word;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+}

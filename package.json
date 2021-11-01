@@ -1,0 +1,17 @@
+{
+  "name": "discover-trail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-comp": "sass front-end/css/main.scss front-end/css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "saas": "^1.0.0",
+    "sass": "^1.43.4"
+  }
+}
