@@ -1,17 +1,22 @@
 {
-  "name": "discover-trail",
+  "name": "rocketq",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-comp": "sass front-end/css/main.scss front-end/css/main.css --watch"
+    "start": "nodemon .",
+    "sass-comp": "sass public/css/main.scss public/css/main.css --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "gustavo barreto",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
     "saas": "^1.0.0",
     "sass": "^1.43.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
   }
 }

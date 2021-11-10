@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" />
+    
+    <!--Link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--CDN google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+        <!--CDN FA-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <title>Rocket.Q</title>
+</head>
+
+<body>
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="my-3">
+                <img src="/images/logo.png" alt="logo">
+            </div>
+
+            <div>
+                <a class="btn btn-light" href="">#323243</a>
+                <a class="btn btn-primary" href="">Criar sala</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mt-5">
+                    <h3 class="fw-bold">Faça sua pergunta</h3>
+
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 10rem"></textarea>
+                        <label class="text-secondary" for="floatingTextarea2">O que você quer perguntar?</label>
+                    </div>
+                    <div class="d-flex justify-content-between mt-2">
+                        <p class="text-secondary"><i class="fas fa-lock"></i> Esta pergunta é anônima</p>
+                        <a class="btn btn-primary" href="">Enviar</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-12 mt-4">
+                    <!-- <div class="d-flex justify-content-center">
+                        <img src="/images/no-message.png" alt="">
+                    </div>
+                    <div class="mt-3">
+                        <h5 class="fw-bold text-center">Nenhuma mensagem por aqui...</h5>
+                        <p class="text-secondary text-center">Faça sua primeira pergunta e envie o código dessa sala para outras pessoas!</p>
+                    </div> -->
+                    <div class="col-lg-12 col-12">
+
+                        <div class="my-2">
+                            <div class="d-flex align-items-center bg-questions p-3">
+                                <img src="/images/avatar.png" alt="">
+                                <p class="ms-2">Qual a diferença entre const, var e let no Javascript?</p>
+                            </div>
+                            <div class="d-flex justify-content-end bg-questions p-3">
+                                <button class="btn me-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Marcar como lida</button>
+                                <button class="btn bg-danger text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">Excluir</button>                            
+                            </div>
+                        </div>
+
+                        <div class="my-2">
+                            <div class="d-flex align-items-center bg-questions p-3">
+                                <img src="/images/avatar.png" alt="">
+                                <p class="ms-2">O que é Typescript?</p>
+                            </div>
+                            <div class="d-flex justify-content-end bg-questions p-3">
+                                <button class="btn me-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Marcar como lida</button>
+                                <button class="btn bg-danger text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">Excluir</button>                            
+                            </div>
+                        </div>
+
+                        <div class="my-2">
+                            <div class="d-flex align-items-center bg-questions p-3">
+                                <img src="/images/avatar.png" alt="">
+                                <p class="ms-2">O que é Javascript?</p>
+                            </div>
+                            <div class="d-flex justify-content-end bg-questions p-3">
+                                <button class="btn me-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Marcar como lida</button>
+                                <button class="btn bg-danger text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">Excluir</button>                            
+                            </div>
+                        </div>
+
+                        <div class="my-2">
+                            <div class="d-flex align-items-center bg-grey p-3">
+                                <img src="/images/avatar.png" alt="">
+                                <p class="ms-2">O que é Javascript?</p>
+                            </div>
+                            <div class="d-flex justify-content-end bg-grey p-3">
+                                <button class="btn me-2">Pergunta lida</button>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+  
+  <!-- Modal 1-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header d-flex flex-column">
+          <h5 class="modal-title fw-bold mb-1" id="exampleModalLabel">Excluir pergunta</h5>
+          <p class="text-secondary">Tem certeza que você deseja excluir esta pergunta?</p>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <div class="d-flex justify-content-center my-3">
+                    <input class="form-control w-75" name="password" id="password" type="password" 
+                    placeholder="digite sua senha">
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn bg-questions" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn bg-danger text-white">Sim, excluir</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal 2-->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header d-flex flex-column">
+          <h5 class="modal-title fw-bold mb-1" id="exampleModalLabel">Marcar como lido</h5>
+          <p class="text-secondary">Tem certeza que você deseja marcar como lido esta pergunta?</p>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <div class="d-flex justify-content-center my-3">
+                    <input class="form-control w-75" name="password" id="password" type="password" 
+                    placeholder="digite sua senha">
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn bg-questions" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success text-white">Sim, marcar</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
